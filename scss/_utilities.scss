@@ -1,0 +1,121 @@
+//flex
+.d-flex {
+    display: flex;
+}
+.flex-column { 
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+//text
+.text-light { 
+    color: $light;
+}
+.text-center { 
+    text-align: center;
+}
+
+//lh
+.leading-1 {
+    line-height: 42px;
+}
+.leading-2 {
+    line-height: 84px;
+}
+.leading-3 {
+    line-height: 106px;
+}
+
+//spacing
+.pt-7 { padding-top: 28px;}
+.pt-14 { padding-top: 56px;}
+.pt-16 { padding-top: 64px;}
+
+.pb-1 { padding-bottom: 4px;}
+.pb-2 { padding-bottom: 8px;}
+.pb-3 { padding-bottom: 12px;}
+.pb-4 { padding-bottom: 16px;}
+.pb-5 { padding-bottom: 20px;}
+.pb-6 { padding-bottom: 24px;}
+.pb-7 { padding-bottom: 28px;}
+.pb-8 { padding-bottom: 32px;}
+.pb-10 {padding-bottom: 40px;}
+.pb-12 { padding-bottom: 48px;}
+.pb-14 { padding-bottom: 56px;}
+.pb-16 { padding-bottom: 64px;}
+.pb-17 { padding-bottom: 68px;}
+.pb-36 { padding-bottom: 144px;}
+.pb-40 { padding-bottom: 160px;}
+
+.pr-4 { padding-right: 16px}
+.pr-6 { padding-right: 24px;}
+
+.mx-auto { margin: 0 auto;}
+.mt-14 { margin-top: 56px;}
+.mb-14 { margin-bottom: 56px;}
+.mb-10 { margin-bottom: 40px;}
+.mr-6 { margin-right: 24px;}
+
+//border
+.border-top {
+    border-top: 1px solid $dark;
+}
+
+//background
+.bg-dark {
+    background-color: $dark;
+}
+
+//width
+.w-32 {
+    width: 32%;
+}
+.w-49 {
+    width: 49%;
+}
+.w-66 {
+    width: 66%;
+}
+
+//圓點
+.round-danger {
+    &::before {
+        content: '';
+        background-color: $danger;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+}
+
+//hover
+.hover-bigger {
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.hover-fadeout {
+    &:hover {
+        opacity: 0.5;
+        color: $danger;
+        font-weight: bold;
+    }
+}
+.hover-color-danger {
+    &:hover {
+        color: $danger;
+    }
+}
